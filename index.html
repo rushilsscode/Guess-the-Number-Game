@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+</head>
+<style>
+    body{
+        background-color: #003135;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .container{
+        background-color: #024950;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 500px;
+    }
+    h1{
+        color: #070108;
+    }
+    .Box{
+        margin: 10px;
+        height: 200px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .result{
+        background-color: #0FA4AF;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        width: 400px;
+        /* font-size: 50px; */
+    }
+</style>
+<body>
+    <div class="container" >
+        <h1>Number Gussing Game</h1>
+        <div class="Box" >
+            <h2>Guess a Number</h2>
+            <input class="User_input" type="text"> <br>
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+    <div class="result">
+        <p>Previous Guesss <span class="guesses" ></span> </p>
+        <p>Guess remaining: <span class="cnt" >10</span> </p>
+        <p class="lowOrHI"></p>
+    </div>
+</body>
+<script src="index.js" ></script>
+</html>
